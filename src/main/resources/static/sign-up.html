@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Projecty</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="/mainstyle.css" rel="stylesheet">
+</head>
+<body class="register">
+<div class="topnav">
+
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#signin">Sign in</a>
+</div>
+<div>
+  <p class="create">Create your account</p>
+  <form class="createform" action="http://localhost:8084/api/users" method="POST">
+    <div>
+      <label for="fName">First Name:</label>
+      <input id="fName">
+    </div>
+    <div>
+      <label for="lName">Last Name:</label>
+      <input id="lName">
+    </div>
+    <div>
+      <label for="position">Position:</label>
+      <input id="position">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input id="password">
+    </div>
+    <div>
+      <label for="matchingPassword">Repeat password:</label>
+      <input id="matchingPassword">
+    </div>
+    <div>
+      <button class="add">Sign up</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
