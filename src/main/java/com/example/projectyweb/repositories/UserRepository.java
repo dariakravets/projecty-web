@@ -9,6 +9,6 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
     @Query( value = "select u from User u")
-    List<User> findByName(String name);
+    List<User> findByEmail(String email);
     //List<User> findByPosition(String position);
 }

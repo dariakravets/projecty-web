@@ -1,14 +1,19 @@
 package com.example.projectyweb.models;
+import com.example.projectyweb.ValidEmail;
+import com.example.projectyweb.registration.PasswordMatches;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "users")
+@PasswordMatches
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_generator")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private long id;
     @Column(name = "firstName")
     private String firstName;
@@ -18,18 +23,24 @@ public class User {
     private String position;
 
     @NotNull
+    @NotEmpty
+    @Column(name = "password")
     private String password;
+    @Column(name = "matchingPassword")
     private String matchingPassword;
 
     @NotNull
+    @NotEmpty
+    @Column(name = "email")
     private String email;
     public User() { }
-    public User(String firstName, String lastName, String position, String password, String email){
+    public User(String firstName, String lastName, String position, String email, String password, String matchingPassword){
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
         this.password = password;
         this.email = email;
+        this.matchingPassword = matchingPassword;
     }
 
     public long getId() {

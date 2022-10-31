@@ -60,11 +60,13 @@
     transition-duration: 0.4s;
 }
 
-button:hover {
+.add:hover {
     background-color: transparent;
-    color: white;
-    outline: 1px solid white;
+    color: #0D264A;
+    outline: 1px solid #0D264A;
 }
+
+
 
 .topnav {
     font-family: "Calibri Light";

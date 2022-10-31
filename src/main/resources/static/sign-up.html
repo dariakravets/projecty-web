@@ -10,39 +10,41 @@
 
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-  <a href="#signin">Sign in</a>
+  <a href="/html/sign-in.html">Sign in</a>
 </div>
 <div>
   <p class="create">Create your account</p>
-  <form class="createform" action="http://localhost:8084/api/users" method="POST">
+<!--  <form class="createform" action="http://localhost:8084/api/users" method="POST">-->
     <div>
-      <label for="fName">First Name:</label>
+      <label for="fName">First name</label>
       <input id="fName">
     </div>
     <div>
-      <label for="lName">Last Name:</label>
+      <label for="lName">Last name</label>
       <input id="lName">
     </div>
     <div>
-      <label for="position">Position:</label>
+      <label for="position">Position</label>
       <input id="position">
     </div>
     <div>
-      <label for="email">Email:</label>
-      <input id="email">
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
     </div>
     <div>
-      <label for="password">Password:</label>
-      <input id="password">
+      <label for="password">Password</label>
+      <input type="password" id="password">
     </div>
     <div>
-      <label for="matchingPassword">Repeat password:</label>
-      <input id="matchingPassword">
+      <label for="matchPassword">Confirm password</label>
+      <input type="password" id="matchPassword">
     </div>
-    <div>
-      <button class="add">Sign up</button>
-    </div>
-  </form>
+  <a href="html/sign-in.html">
+    <button id="add" class="add">Submit</button>
+  </a>
+
 </div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/register.js"></script>
 </body>
 </html>
