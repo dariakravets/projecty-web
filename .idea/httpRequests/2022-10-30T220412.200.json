@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "firstName": "David",
+  "lastName": "Kravets",
+  "position": "asdf",
+  "password": "123451234",
+  "matchingPassword": "123451234",
+  "email": "kravets.dariia@gmail.com"
+}

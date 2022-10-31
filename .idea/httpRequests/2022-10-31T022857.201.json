@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "firstName": "Dasha",
+  "lastName": "Kravets",
+  "position": "asdff",
+  "password": "512345",
+  "matchingPassword": "512345",
+  "email": "user.user@gmail.com"
+}
